@@ -86,7 +86,7 @@ Purpose:
 Example table:
 
 ```
-healthcare.bronze.qa_sample_raw
+healthcare.bronze.healthcare_qa_raw
 ```
 
 Characteristics:
@@ -115,7 +115,7 @@ Transformations:
 Example table:
 
 ```
-healthcare.silver.qa_sample_clean
+healthcare.silver.healthcare_qa_clean
 ```
 
 Example cleaning logic:
@@ -133,18 +133,15 @@ Standardize product names
 
 Purpose:
 Provide **analytics-ready datasets** for reporting and dashboards.
-
-Example metrics:
-
-* QA test completion rate
-* Product quality distribution
-* Tests performed by method
-* Batch validation statistics
-
 Example table:
 
 ```
-healthcare.gold.qa_quality_metrics
+healthcare.gold.dim_product
+healthcare.gold.dim_method
+healthcare.gold.dim_status
+healthcare.gold.dim_batch
+healthcare.gold.dim_test
+healthcare.gold.fact_qa_tests
 ```
 
 ---
