@@ -86,7 +86,7 @@ Purpose:
 Example table:
 
 ```
-healthcare.bronze.healthcare_qa_raw
+dbdemos.bronze.healthcare_qa_raw
 ```
 
 Characteristics:
@@ -115,7 +115,7 @@ Transformations:
 Example table:
 
 ```
-healthcare.silver.healthcare_qa_clean
+dbdemos.silver.healthcare_qa_clean
 ```
 
 Example cleaning logic:
@@ -136,12 +136,12 @@ Provide **analytics-ready datasets** for reporting and dashboards.
 Example table:
 
 ```
-healthcare.gold.dim_product
-healthcare.gold.dim_method
-healthcare.gold.dim_status
-healthcare.gold.dim_batch
-healthcare.gold.dim_test
-healthcare.gold.fact_qa_tests
+dbdemos.gold.dim_product
+dbdemos.gold.dim_method
+dbdemos.gold.dim_status
+dbdemos.gold.dim_batch
+dbdemos.gold.dim_test
+dbdemos.gold.fact_qa_tests
 ```
 
 ---
