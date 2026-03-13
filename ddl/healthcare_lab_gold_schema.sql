@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS healthcare.gold.dim_product
+CREATE TABLE IF NOT EXISTS dbdemos.gold.dim_product
 (
     product_key BIGINT,
     product STRING,
@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS healthcare.gold.dim_product
 )
 USING DELTA;
 
-CREATE TABLE IF NOT EXISTS healthcare.gold.dim_method
+CREATE TABLE IF NOT EXISTS dbdemos.gold.dim_method
 (
     method_key BIGINT,
     x_method STRING,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS healthcare.gold.dim_method
 )
 USING DELTA;
 
-CREATE TABLE IF NOT EXISTS healthcare.gold.dim_status
+CREATE TABLE IF NOT EXISTS dbdemos.gold.dim_status
 (
     status_key BIGINT,
     status STRING,
@@ -24,7 +24,7 @@ CREATE TABLE IF NOT EXISTS healthcare.gold.dim_status
 )
 USING DELTA;
 
-CREATE TABLE IF NOT EXISTS healthcare.gold.dim_batch
+CREATE TABLE IF NOT EXISTS dbdemos.gold.dim_batch
 (
     batch_key BIGINT,
     lot_name STRING,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS healthcare.gold.dim_batch
 )
 USING DELTA;
 
-CREATE TABLE IF NOT EXISTS healthcare.gold.dim_test
+CREATE TABLE IF NOT EXISTS dbdemos.gold.dim_test
 (
     test_key BIGINT,
     test_number INT,
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS healthcare.gold.dim_test
 )
 USING DELTA;
 
-CREATE TABLE IF NOT EXISTS healthcare.gold.fact_qa_tests
+CREATE TABLE IF NOT EXISTS dbdemos.gold.fact_qa_tests
 (
     test_id int,
 
